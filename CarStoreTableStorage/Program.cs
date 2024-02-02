@@ -11,7 +11,7 @@ namespace CarStoreTableStorage
             IServiceProvider serviceProviders = SetupServices();
 
             ICarStoreService carStoreService = serviceProviders.GetService<ICarStoreService>();
-            carStoreService.Menu();
+            carStoreService.Menu().GetAwaiter().GetResult();
         }
 
         public static IServiceProvider SetupServices()
