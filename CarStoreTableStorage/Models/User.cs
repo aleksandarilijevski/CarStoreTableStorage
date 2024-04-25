@@ -5,18 +5,20 @@ namespace CarStoreTableStorage.Models
 {
     public class User : ITableEntity
     {
-        public string PartitionKey { get; set; }
-
         public string RowKey { get; set; }
+
+        public string PartitionKey { get; set; } = nameof(User);
 
         public DateTimeOffset? Timestamp { get; set; }
 
         public ETag ETag { get; set; }
 
+        public string FirstAndLastName { get; set; }
+
         public DateTime DateOfBirth { get; set; }
 
         public long JMBG { get; set; }
 
-        public List<Car> OwnedCars { get; set; } = new List<Car>();
+        public double Balance { get; set; }
     }
 }

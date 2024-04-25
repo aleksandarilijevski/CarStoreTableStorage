@@ -6,8 +6,8 @@
 
         public Task Menu();
 
-        public void AddUser();
+        public Task AddUser();
 
-        public void AddCar();
+        public Task AddCar();
     }
 }

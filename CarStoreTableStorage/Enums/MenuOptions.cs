@@ -10,9 +10,12 @@
         GetAllCars = 6,
         GetUserByID = 7,
         GetCarByID = 8,
-        DeleteUser = 9,
-        DeleteCar = 10,
-        SellCar = 11,
-        Exit = 12
+        GetUserByColumnData = 9,
+        GetCarByColumnData = 10,
+        DeleteUser = 11,
+        DeleteCar = 12,
+        AddBalance = 13,
+        SellCar = 14,
+        Exit = 15
     }
 }
